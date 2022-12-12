@@ -1,0 +1,144 @@
+/* CSS Minimal Reset from DigitalOcean */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Admin Dashboard project  */
+:root {
+  --clr-main-theme: #1992d4;
+  --clr-text-main-theme: white;
+}
+
+body {
+  height: 100vh;
+}
+
+/* General Layout */
+
+.dashboard {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  grid-template-rows: 1fr 5fr;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-color: var(--clr-main-theme);
+  color: var(--clr-text-main-theme);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 0px 60px;
+  gap: 4rem;
+}
+
+.logo {
+  font-size: 2.3rem;
+}
+
+header {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px 50px;
+  box-shadow: 0px 0px 50px black;
+}
+
+/* Sidebar layout */
+.app-nav ul,
+.settings-nav ul {
+  margin-bottom: 3rem;
+}
+.app-nav ul li,
+.settings-nav ul li {
+  line-height: 30rem;
+}
+
+/* Header Layout */
+.searchbar input {
+  appearance: none;
+  border: none;
+  border-radius: 20px;
+  height: 35px;
+  width: 90%;
+  background-color: rgba(128, 128, 128, 0.2);
+  padding: 15px;
+  font-size: inherit;
+}
+
+.greeting-msg {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.greeting-name {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.greeting-msg img {
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
+.profile-settings {
+  justify-self: end;
+}
+
+.action-nav {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.action-nav button {
+  appearance: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 100px;
+  background-color: var(--clr-main-theme);
+  color: var(--clr-text-main-theme);
+  font-size: 1rem;
+  font-weight: bold;
+}
