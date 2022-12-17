@@ -42,7 +42,7 @@ img {
   --clr-card-border: #f0b429;
   --clr-text-subtitles: black;
   --clr-text-cards: grey;
-  --box-shadow: 0px 0px 50px -20px rgba(0, 0, 0, 0.43);
+  --box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.42);
 }
 
 body {
@@ -250,7 +250,8 @@ header {
 }
 
 .card {
-  height: 200px;
+  display: flex;
+  flex-direction: column;
   padding: 25px 20px 25px 20px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
@@ -260,6 +261,18 @@ header {
 .card p {
   width: 80%;
   color: var(--clr-text-cards);
+}
+
+.cards-icon {
+  display: flex;
+  gap: 20px;
+  align-self: end;
+  margin-top: 60px;
+}
+
+.cards-icon img {
+  width: 28px;
+  height: auto;
 }
 
 .annoucements {
